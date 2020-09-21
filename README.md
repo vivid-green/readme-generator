@@ -6,6 +6,9 @@ README Generator
 Prompts user via inquirer CLI to dynamically create a README.md file for use in GitHub repos. 
 
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+
+![Screenshot](screenshot.png)
+
 # Table of Contents
 * [Title](#Title)
 * [Description](#Description)
@@ -21,6 +24,8 @@ Run npm install to install node dependencies.
 
 # Usage
 Run command: node index.js. This will initialize the inquirer prompts. Answer all the questions about your project to generate a README.md file. 
+
+![Demo GIF](demo.gif)
 
 # License
 This work is licensed under the following:

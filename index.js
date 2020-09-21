@@ -4,14 +4,31 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const filename = "README.md";
 
+const promptUser = _ => inquirer.prompt(questions);
+
+const init = _ => {
+    promptUser()
+    .then(buildMarkdown)
+    .then(writeReadme)
+    .catch(err => {
+        console.log(err);
+    });
+};
+
 const writeReadme = markdown => {
     return new Promise((resolve,reject) => {
         fs.writeFile(filename, markdown, 'utf8', (err) => {
             if(err) {
-                return reject(console.log(err));
+                return reject(err);
             }
         });
-        resolve(console.log("README.md created!"));
+        resolve(printASCII("success"));
+    });
+}
+
+const printASCII = msgFile => {
+    fs.readFile(`./${msgFile}.txt`, function(err, buf) {
+        console.log(buf.toString());
     });
 }
 
@@ -55,7 +72,4 @@ const buildMarkdown = answers => {
     })
 };
 
-const promptUser = _ => inquirer.prompt(questions);
-promptUser().then(buildMarkdown).then(writeReadme).catch(err => {
-    console.log(err);
-});
+init();
