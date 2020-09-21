@@ -52,7 +52,7 @@ const choices = {
         link: "https://opensource.org/licenses/Zlib",
     },
     "Attribution 4.0 International": {
-        badge: "[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)",
+        badge: "[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)",
         link: "http://creativecommons.org/licenses/by/4.0/"
     },
     "Attribution-ShareAlike 4.0 International": {
@@ -60,7 +60,7 @@ const choices = {
         link: "http://creativecommons.org/licenses/by-sa/4.0/"
     },
     "Attribution-NonCommercial 4.0 International": {
-        badge: "[![License: CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/80x15.png)](http://creativecommons.org/licenses/by-nc/4.0/)",
+        badge: "[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc/4.0/)",
         link: "http://creativecommons.org/licenses/by-nc/4.0/"
     },
     "Attribution-NoDerivates 4.0 International": {
